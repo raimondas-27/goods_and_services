@@ -1,14 +1,14 @@
-# Simple Pseudo goods and orders app  backend
+# Simple Pseudo orders back end
 
-Simple goods and orders api. we use mongo for database.
+Simple goods and services backend api. we use mongo for database.
 
 ### Features
 
-1. add order or good to cart
-2. cart rder or good quantity control 
-3. remove rder or good from cart 
-4. sort rder or good by category
-5. simple pseudo login to differentiate users by their cart
+1. add good and service to cart
+2. good and service item quantity control 
+3. remove item from good and service 
+4. sort good and service by category
+
 
 ## Installation
 
@@ -26,3 +26,4 @@ Simple goods and orders api. we use mongo for database.
 -morgan
 -dotenv
 -mongoose
+-express

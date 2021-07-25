@@ -4,7 +4,7 @@
   "description": "Simple goods and orders api. we use mongo for database.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "R.K.",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/raimondas-27/orders_and_goods/issues"
   },
-  "homepage": "https://github.com/raimondas-27/orders_and_goods#readme"
+  "homepage": "https://github.com/raimondas-27/orders_and_goods#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
 }
