@@ -14,3 +14,8 @@ Content-Type: application/json
   "description": "Water from ground, carbohydrated",
   "type": "good"
 }
+
+### delete new good or service from list
+
+DELETE http://localhost:4000//api/allOrders/delete/60fdae44dcae797bd473ee2d
+
