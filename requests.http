@@ -1,0 +1,16 @@
+### get all goods and services
+
+GET http://localhost:4000/api/allOrders
+
+### add new good or service to list
+
+POST http://localhost:4000/api/allOrders/new
+Content-Type: application/json
+
+{
+  "name": "Mineral water",
+  "price": 2.99,
+  "quantity": 2,
+  "description": "Water from ground, carbohydrated",
+  "type": "good"
+}

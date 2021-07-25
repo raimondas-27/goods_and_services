@@ -7,19 +7,26 @@ const cors = require('cors');
 const app = express();
 const PORT = 4000;
 
-// prisijungimas prie duomenu bazes
+// connection to database
 mongoose
   .connect(process.env.MONGO_CONNECT_STRING, {useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
-    console.log('Conneced to Mongo ooooooooose');
+    console.log('Connected to MongoDB Atlas');
   })
   .catch((err) => console.error(err.message));
 
-// MIddleware
+// Middleware
 app.use(morgan('dev'));
-// leidzia req body gauti kaip json
+
+// allows to get req.body as json
 app.use(express.json());
 app.use(cors());
+
+//Routes
+
+const ordersRoutes = require("./Routes/ordersRoutes")
+app.use("/", ordersRoutes)
+
 
 app.get('/', (req, res) => {
   res.status(200).json(`Serveris veikia an port ${PORT}`);
