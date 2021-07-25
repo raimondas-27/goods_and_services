@@ -1,12 +1,20 @@
 {
   "name": "goods_and_orders",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple goods and orders api. we use mongo for database.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "R.K.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raimondas-27/orders_and_goods.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raimondas-27/orders_and_goods/issues"
+  },
+  "homepage": "https://github.com/raimondas-27/orders_and_goods#readme"
 }
