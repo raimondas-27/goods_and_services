@@ -85,9 +85,9 @@ class App extends Component {
              <NavBar/>
              <Switch>
                 <Route exact path="/" render={(props) => (
-                    <OrdersList onDelete={this.deleteGoodOrService}
-                                allOrders={this.state.allOrders}
+                    <OrdersList allOrders={this.state.allOrders}
                                 getOrders={this.getAllGoodsAndServices}
+                                onDelete={this.deleteGoodOrService}
                                 onFilterByType={this.filterByType}
                                 {...props}
 
