@@ -59,10 +59,8 @@ router.delete('/api/allOrders/delete/:id', async (req, res) => {
 router.put('/api/allOrders/edit/:id', async (req, res) => {
    console.log("req body",req.body)
    try {
-
       const updatingGoodOrService = await OrderItem.findByIdAndUpdate({_id: req.params.id},
           req.body)
-      console.log(updatingGoodOrService)
       res.json({success: true, msg: updatingGoodOrService});
    } catch (err) {
       res.json(err);
@@ -76,7 +74,7 @@ router.get('/api/allOrders/:type', async (req, res) => {
    const filterBy = req.params.type;
    try {
       const filteringByGoodOrService = await OrderItem.find({type : filterBy})
-      res.json({filteringByGoodOrService});
+      res.json(filteringByGoodOrService);
    } catch (err) {
       res.json(err);
    }
